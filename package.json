@@ -1,13 +1,11 @@
 {
-  "homepage": "http://Gayathrisrikanti.github.io/StudentApp1_Micro",
   "name": "StudentAPP1",
   "version": "1.0.0",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
-    "build:start": "cd dist && PORT=3000 npx serve",
     "start": "webpack serve --open --mode development",
     "start:live": "webpack serve --open --mode development --live-reload --hot"
   },
